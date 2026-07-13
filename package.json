@@ -1,0 +1,25 @@
+{
+  "name": "lifebox-academy-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.5.5",
+    "nuxt": "^3.16.0",
+    "pinia": "^2.2.6",
+    "vue": "^3.5.13",
+    "vuetify": "^3.7.4",
+    "vuetify-nuxt-module": "^0.18.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
