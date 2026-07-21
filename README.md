@@ -2,7 +2,7 @@
 
 Nuxt 3 + TypeScript + Vuetify + Pinia. Consume el API del Backend.
 
-## Requisitos (entorno virgen)
+## Requisitos (entorno vacío)
 
 Instala estas herramientas de sistema **antes** de clonar o correr el proyecto.
 
