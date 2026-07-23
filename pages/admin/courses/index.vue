@@ -30,11 +30,6 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-if="!courses?.length">
-          <td colspan="4" class="text-medium-emphasis py-6">
-            No hay cursos aún.
-          </td>
-        </tr>
         <tr v-for="course in courses" :key="course.id">
           <td>{{ course.full_name }}</td>
           <td>{{ course.version }}</td>

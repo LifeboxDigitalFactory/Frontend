@@ -16,14 +16,14 @@ Necesario para clonar el repositorio.
 | Linux (Debian/Ubuntu) | `sudo apt update && sudo apt install git` |
 | Windows | [Git for Windows](https://git-scm.com/download/win) o `winget install Git.Git` |
 
-### 2. Node.js 20+ (incluye npm)
+### 2. Node.js 22+ (incluye npm)
 
-Verifica con `node --version` (≥ 20) y `npm --version`.
+Verifica con `node --version` (≥ 22) y `npm --version`. Node 20 no es suficiente para instalar las dependencias actuales.
 
 | OS | Instalación |
 |----|-------------|
-| macOS | `brew install node@20` o instalador LTS desde [nodejs.org](https://nodejs.org/) |
-| Linux (Debian/Ubuntu) | Usa [nvm](https://github.com/nvm-sh/nvm) (recomendado) o `sudo apt install nodejs npm` (confirma que la versión sea ≥ 20) |
+| macOS | `brew install node@22` o instalador LTS desde [nodejs.org](https://nodejs.org/) |
+| Linux (Debian/Ubuntu) | Usa [nvm](https://github.com/nvm-sh/nvm) (recomendado) o `sudo apt install nodejs npm` (confirma que la versión sea ≥ 22) |
 | Windows | Instalador LTS desde [nodejs.org](https://nodejs.org/) o `winget install OpenJS.NodeJS.LTS` |
 
 Con **nvm** (macOS / Linux):
@@ -31,9 +31,11 @@ Con **nvm** (macOS / Linux):
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 # reinicia la terminal, luego:
-nvm install 20
-nvm use 20
+nvm install
+nvm use
 ```
+
+(`nvm install` / `nvm use` leen la versión del `.nvmrc` del repo.)
 
 ### 3. Backend corriendo
 
@@ -48,20 +50,20 @@ Este frontend necesita el API del repo Backend en `http://127.0.0.1:8000`.
 
 ```bash
 xcode-select --install
-brew install node@20   # o descarga LTS desde nodejs.org
+brew install node@22   # o descarga LTS desde nodejs.org
 ```
 
 **Linux (Debian/Ubuntu)**
 
 ```bash
 sudo apt update && sudo apt install git
-# luego Node 20+ vía nvm (recomendado) o el gestor de paquetes de tu distro
+# luego Node 22+ vía nvm (recomendado) o el gestor de paquetes de tu distro
 ```
 
 **Windows**
 
 1. Instala [Git](https://git-scm.com/download/win).
-2. Instala [Node.js LTS 20+](https://nodejs.org/).
+2. Instala [Node.js LTS 22+](https://nodejs.org/).
 
 ## Setup
 
